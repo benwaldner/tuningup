@@ -1,6 +1,6 @@
 # tuningup
 
-**Tuning Up: From A/B Testing to Bayesian Optimization**
+**Tuning Up: From A/B Testing to Bayesian Optimization**  
 by David Sweet, Manning Publications
 
 Here you'll find one Jupyter notebook for each chapter of the book. The notebooks
