@@ -23,7 +23,11 @@ class TuningUp:
     def save_fig_named(self, name):
         plt.tight_layout()
         for ext in ["eps", "png"]:
-            plt.savefig(f"{self.fig_dir}/CH{self.chapter:02d}_{name}_sweet.{ext}")
+            try:
+                fmt = f"{self.chapter:02d}"
+            except Exception:
+                fmt = self.chapter
+            plt.savefig(f"{self.fig_dir}/CH{fmt}_{name}_sweet.{ext}")
 
     def save_fig(self, fig_num):
         self.save_fig_named(f"F{fig_num:02d}")
