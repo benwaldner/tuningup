@@ -1,6 +1,7 @@
 # tuningup
 
 [**Experimentation for engineers: From A/B Testing to Bayesian Optimization**](https://www.manning.com/books/experimentation-for-engineers)
+
 by David Sweet, Manning Publications
 
 Here you'll find one Jupyter notebook for each chapter of the book. The notebooks
