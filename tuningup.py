@@ -6,7 +6,10 @@ class TuningUp:
     def __init__(self, chapter, base_dir = "/Users/dsweet2/Desktop/Tuning Up"):
         assert os.path.exists(base_dir), f"Directory {base_dir} does not exists"
         self.chapter = chapter
-        self.fig_dir = f"{base_dir}/Chapter {chapter}/"
+        if isinstance(chapter, str):
+            self.fig_dir = f"{base_dir}/Appendix {chapter}/"
+        else:
+            self.fig_dir = f"{base_dir}/Chapter {chapter}/"
         self.clr1 = "#444444"
         self.clr2 = "#777777"
         self.clr3 = "#AAAAAA"
